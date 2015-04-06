@@ -3,7 +3,7 @@
 
 <section role="presentation">
   <div class="jumbotron" ng-repeat="post in posts" >
-    <a href="{{post.short_url}}" target="_blank" class="pull-right">
+    <a title="open original link" href="{{post.short_url}}" target="_blank" class="pull-right">
       <i class="glyphicon glyphicon-link"></i></a>
 
     <h3 style="margin-top: -2px"><a href="#/post/{{post.id}}">{{post.title}}</a> </h3>
