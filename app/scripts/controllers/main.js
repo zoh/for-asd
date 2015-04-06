@@ -10,7 +10,7 @@
 angular.module('tzAsdApp')
 
   .service('TumblrResource', function ($resource, blog_name, api_key) {
-    return $resource('http://api.tumblr.com/v2/blog/:blog_name/posts/text?callback=JSON_CALLBACK', {
+    return $resource('https://api.tumblr.com/v2/blog/:blog_name/posts/text?callback=JSON_CALLBACK', {
       blog_name: blog_name,
       api_key: api_key
     }, {

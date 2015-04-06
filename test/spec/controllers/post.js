@@ -29,7 +29,7 @@ describe('Controller: PostCtrl', function () {
   beforeEach(function () {
     var returnData = {response: {posts: posts}};
     httpBackend.expectJSONP(
-      'http://api.tumblr.com/v2/blog/' + blog_name + '/posts/text?callback=JSON_CALLBACK' +
+      'https://api.tumblr.com/v2/blog/' + blog_name + '/posts/text?callback=JSON_CALLBACK' +
       '&api_key=' + api_key)
       .respond(returnData);
   });
